@@ -1,7 +1,7 @@
 package ru.job4j.condition;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
 
 public class PointTest {
 
@@ -13,7 +13,7 @@ public class PointTest {
         int x2 = 2;
         int y2 = 0;
         double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
+        assertThat(out).isCloseTo(expected, offset(0.01));
     }
 
     @Test
@@ -24,7 +24,7 @@ public class PointTest {
         int x2 = 2;
         int y2 = 2;
         double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
+        assertThat(out).isCloseTo(expected, offset(0.01));
     }
 
     @Test
@@ -35,7 +35,7 @@ public class PointTest {
         int x2 = 4;
         int y2 = 4;
         double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
+        assertThat(out).isCloseTo(expected, offset(0.01));
     }
 
     @Test
@@ -46,6 +46,6 @@ public class PointTest {
         int x2 = -10;
         int y2 = -10;
         double out = Point.distance(x1, y1, x2, y2);
-        Assert.assertEquals(expected, out, 0.01);
+        assertThat(out).isCloseTo(expected, offset(0.01));
     }
 }

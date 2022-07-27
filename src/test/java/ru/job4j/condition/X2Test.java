@@ -1,7 +1,7 @@
 package ru.job4j.condition;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
 
 public class X2Test {
 
@@ -13,7 +13,7 @@ public class X2Test {
         int x = 2;
         int expected = 40;
         int rsl = X2.calc(a, b, c, x);
-        Assert.assertEquals(expected, rsl);
+        assertThat(rsl).isEqualTo(expected);
     }
 
     @Test
@@ -24,7 +24,7 @@ public class X2Test {
         int x = 1;
         int expectedTest2 = 3;
         int rsl = X2.calc(a, b, c, x);
-        Assert.assertEquals(expectedTest2, rsl);
+        assertThat(rsl).isEqualTo(expectedTest2);
     }
 
     @Test
@@ -35,7 +35,7 @@ public class X2Test {
         int x = 1;
         int expectedTest3 = 2;
         int rsl = X2.calc(a, b, c, x);
-        Assert.assertEquals(expectedTest3, rsl);
+        assertThat(rsl).isEqualTo(expectedTest3);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class X2Test {
         int x = 1;
         int expectedTest4 = 2;
         int rsl = X2.calc(a, b, c, x);
-        Assert.assertEquals(expectedTest4, rsl);
+        assertThat(rsl).isEqualTo(expectedTest4);
     }
 
     @Test
@@ -57,6 +57,6 @@ public class X2Test {
         int x = 0;
         int expectedTest5 = 1;
         int rsl = X2.calc(a, b, c, x);
-        Assert.assertEquals(expectedTest5, rsl);
+        assertThat(rsl).isEqualTo(expectedTest5);
     }
 }
