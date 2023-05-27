@@ -1,0 +1,28 @@
+{
+  "hoba": {
+    "oba": {
+      "data": [
+        {
+          "id": "a1",
+          "name": "John",
+          "sur": "do"
+        },
+        {
+          "id": "a2",
+          "name": "Jane",
+          "sur": "do"
+        },
+        {
+          "id": "a1",
+          "name": "Alice",
+          "sur": "da"
+        },
+        {
+          "id": "a2",
+          "name": "Ben",
+          "sur": "da"
+        }
+      ]
+    }
+  }
+}
