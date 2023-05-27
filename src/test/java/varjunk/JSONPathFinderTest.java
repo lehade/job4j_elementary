@@ -14,8 +14,7 @@ public class JSONPathFinderTest {
 
     public JSONObject jsonLoader(String path) throws IOException {
         String jsonString = new String(Files.readAllBytes(Paths.get(path)));
-        JSONObject jsonObject = new JSONObject(jsonString);
-        return jsonObject;
+        return new JSONObject(jsonString);
     }
 
     @Test

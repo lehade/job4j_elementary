@@ -7,13 +7,10 @@ public class JSONPathFinder {
 
     public static String findElementByTwoValues(JSONObject json, String targetValue1, String targetValue2) {
         String resultPath = null;
-
-        String currentPath = ""; // Empty path for the root element
-
-        if (json instanceof JSONObject) {
+        String currentPath = "";
+        if (json != null) {
             resultPath = findElementByTwoValues(json, targetValue1, targetValue2, currentPath);
         }
-
         return resultPath;
     }
 
