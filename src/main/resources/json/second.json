@@ -2,7 +2,7 @@
   "success": true,
   "body": {
     "result": "SUCCESS",
-    "pid": "3459b76c",
+    "pid": "3459456456b76c",
     "flow": "1aa",
     "state": "1dop",
     "output": {
@@ -33,23 +33,23 @@
               "properties": {
                 "products": [
                   {
-                    "linkUuid": "86f183af",
+                    "linkUuid": "123123123",
                     "recipientName": "Автоглавный",
                     "event": "on-change-tariff"
                   },
                   {
-                    "linkUuid": "7e795e74",
-                    "recipientName": "Автодержатель",
+                    "linkUuid": "234234234",
+                    "recipientName": "Автовладелец",
                     "event": "on-change-other-tariff"
                   },
                   {
-                    "linkUuid": "0b1cfe48",
+                    "linkUuid": "34534535",
                     "recipientName": "Автоглавный",
                     "event": "on-change-tariff"
                   },
                   {
-                    "linkUuid": "47ab5eac",
-                    "recipientName": "Автовладелец",
+                    "linkUuid": "45645646",
+                    "recipientName": "Автодержатель",
                     "event": "on-change-other-tariff"
                   }
                 ]
@@ -61,11 +61,11 @@
     },
     "history": [
       {
-        "id": "35c4b928",
+        "id": "111111",
         "status": "ACTIVE"
       },
       {
-        "id": "3459b76d",
+        "id": "222222",
         "status": "ACTIVE"
       }
     ]

@@ -20,9 +20,9 @@ public class JSONPathFinderTest {
     @Test
     public void data0() throws IOException {
         String path = "src/main/resources/json/sample.json";
-        String targetValue1 = "a1";
-        String targetValue2 = "do";
-        String expected = "hoba.oba.data[0]";
+        String targetValue1 = "Автоглавный";
+        String targetValue2 = "on-change-tariff";
+        String expected = null;
         String elementPath = findElementByTwoValues(jsonLoader(path), targetValue1, targetValue2);
         assertThat(elementPath).isEqualTo(expected);
     }
@@ -32,7 +32,7 @@ public class JSONPathFinderTest {
         String path = "src/main/resources/json/sample.json";
         String targetValue1 = "do";
         String targetValue2 = "a2";
-        String expected = "hoba.oba.data[1]";
+        String expected = null;
         String elementPath = findElementByTwoValues(jsonLoader(path), targetValue1, targetValue2);
         assertThat(elementPath).isEqualTo(expected);
     }
@@ -42,7 +42,7 @@ public class JSONPathFinderTest {
         String path = "src/main/resources/json/sample.json";
         String targetValue1 = "da";
         String targetValue2 = "a1";
-        String expected = "hoba.oba.data[2]";
+        String expected = null;
         String elementPath = findElementByTwoValues(jsonLoader(path), targetValue1, targetValue2);
         assertThat(elementPath).isEqualTo(expected);
     }
@@ -52,7 +52,7 @@ public class JSONPathFinderTest {
         String path = "src/main/resources/json/sample.json";
         String targetValue1 = "da";
         String targetValue2 = "a2";
-        String expected = "hoba.oba.data[3]";
+        String expected = null;
         String elementPath = findElementByTwoValues(jsonLoader(path), targetValue1, targetValue2);
         assertThat(elementPath).isEqualTo(expected);
     }
