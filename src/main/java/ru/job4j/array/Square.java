@@ -16,4 +16,4 @@ public class Square {
             System.out.println(i);
         }
     }
-} //numbers[index] = index * 2 + 3;
+}
