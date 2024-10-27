@@ -11,11 +11,10 @@ public class Machine {
         int size = 0;
 
         for (int coin : coins) {
-            if (change >= coin) {
+            while (change >= coin) {
                 result[size] = coin;
                 size++;
                 change -= coin;
-
             }
         }
 
