@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class FitTest {
 
     @Test
-    public void whenManHeight187ThenWeightIs101_05() {
+    public void whenManHeight187ThenWeightIs101point05() {
         short heightMan = 187;
         double expectedWeight = (heightMan - 100) * 1.15;
         double actualWeight = Fit.manWeight(heightMan);
@@ -15,7 +15,7 @@ public class FitTest {
     }
 
     @Test
-    public void whenWomanHeight170ThenWeightIs69_0() {
+    public void whenWomanHeight170ThenWeightIs69() {
         short heightWoman = 170;
         double expectedWeight = (heightWoman - 110) * 1.15;
         double actualWeight = Fit.womanWeight(heightWoman);
@@ -23,7 +23,7 @@ public class FitTest {
     }
 
     @Test
-    public void whenManHeight180ThenWeightIs92_0() {
+    public void whenManHeight180ThenWeightIs92() {
         short heightMan = 180;
         double expectedWeight = (heightMan - 100) * 1.15;
         double actualWeight = Fit.manWeight(heightMan);
@@ -31,7 +31,7 @@ public class FitTest {
     }
 
     @Test
-    public void whenWomanHeight160ThenWeightIs57_5() {
+    public void whenWomanHeight160ThenWeightIs57point5() {
         short heightWoman = 160;
         double expectedWeight = (heightWoman - 110) * 1.15;
         double actualWeight = Fit.womanWeight(heightWoman);
