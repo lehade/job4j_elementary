@@ -1,31 +1,40 @@
 package ru.job4j.calculator;
 
 import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.*;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class FitTest {
 
     @Test
-    public void whenMan180Then92() {
-        short in = 180;
-        double expected = 92;
-        double out = Fit.manWeight(in);
-        assertThat(out).isCloseTo(expected, offset(0.01));
+    public void whenManHeight187ThenWeightIs101_05() {
+        short heightMan = 187;
+        double expectedWeight = (heightMan - 100) * 1.15;
+        double actualWeight = Fit.manWeight(heightMan);
+        assertThat(actualWeight).isEqualTo(expectedWeight);
     }
 
     @Test
-    public void whenMan202Then117p3() {
-        short in = 202;
-        double expected = 117.3;
-        double out = Fit.manWeight(in);
-        assertThat(out).isCloseTo(expected, offset(0.01));
+    public void whenWomanHeight170ThenWeightIs69_0() {
+        short heightWoman = 170;
+        double expectedWeight = (heightWoman - 110) * 1.15;
+        double actualWeight = Fit.womanWeight(heightWoman);
+        assertThat(actualWeight).isEqualTo(expectedWeight);
     }
 
     @Test
-    public void whenWoman170Then69() {
-        short in = 170;
-        double expected = 69;
-        double out = Fit.womanWeight(in);
-        assertThat(out).isCloseTo(expected, offset(0.01));
+    public void whenManHeight180ThenWeightIs92_0() {
+        short heightMan = 180;
+        double expectedWeight = (heightMan - 100) * 1.15;
+        double actualWeight = Fit.manWeight(heightMan);
+        assertThat(actualWeight).isEqualTo(expectedWeight);
+    }
+
+    @Test
+    public void whenWomanHeight160ThenWeightIs57_5() {
+        short heightWoman = 160;
+        double expectedWeight = (heightWoman - 110) * 1.15;
+        double actualWeight = Fit.womanWeight(heightWoman);
+        assertThat(actualWeight).isEqualTo(expectedWeight);
     }
 }
