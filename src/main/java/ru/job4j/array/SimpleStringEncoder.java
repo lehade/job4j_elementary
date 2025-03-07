@@ -5,7 +5,6 @@ public class SimpleStringEncoder {
         String result = "";
         char symbol = input.charAt(0);
         int counter = 1;
-
         for (int i = 1; i < input.length(); i++) {
             if (input.charAt(i) == symbol) {
                 counter++;
@@ -18,12 +17,10 @@ public class SimpleStringEncoder {
                 counter = 1;
             }
         }
-
         result += symbol;
         if (counter > 1) {
             result += counter;
         }
-
         return result;
     }
 }

@@ -8,7 +8,6 @@ public class MatrixSum {
                 result += cell;
             }
         }
-
         return result;
     }
 }
