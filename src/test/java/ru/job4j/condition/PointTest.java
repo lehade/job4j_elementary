@@ -40,4 +40,22 @@ public class PointTest {
         double out = firstPoint.distance(secondPoint);
         assertThat(out).isCloseTo(expected, offset(0.01));
     }
+
+    @Test
+    public void when123to456then5dot19() {
+        double expected = 5.19;
+        Point firstPoint = new Point(1, 2, 3);
+        Point secondPoint = new Point(4, 5, 6);
+        double out = firstPoint.distance3d(secondPoint);
+        assertThat(out).isCloseTo(expected, offset(0.01));
+    }
+
+    @Test
+    public void whenMinus102030to405060then124dot49() {
+        double expected = 124.49;
+        Point firstPoint = new Point(-10, -20, -30);
+        Point secondPoint = new Point(40, 50, 60);
+        double out = firstPoint.distance3d(secondPoint);
+        assertThat(out).isCloseTo(expected, offset(0.01));
+    }
 }
